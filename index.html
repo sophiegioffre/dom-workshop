@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Create a Valentine's Day Card</h1>
+
+    <div id='card-container'>
+        <div id='img-container'>
+            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/17E99/production/_94254979_istock-504075546.jpg"
+                alt="valentine's card">
+        </div>
+        <div id="card-text">Card message</div>
+    </div>
+
+    <div id="background-container">
+        <div class="background-choice">
+            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/17E99/production/_94254979_istock-504075546.jpg"
+                alt="card background">
+        </div>
+        <div class="background-choice">
+            <img src="https://amp.thenationalnews.com/image/policy:1.978563:1581590124/wk14-feb-great-debate.jpg?f=16x9&w=1200&$p$f$w=3c39740"
+                alt="card background">
+        </div>
+    </div>
+
+    <textarea oninput='updateText()' id='user-text' rows=10 cols=50 placeholder="Write your message here"></textarea>
+
+    <div id="color-selector">
+        <div onclick="changeTextColor('red')" class="color-choice" style="background-color: red"></div>
+        <div class="color-choice" style="background-color: magenta" onclick="changeTextColor('magenta')"></div>
+        <div class="color-choice" onclick="changeTextColor('white')"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
